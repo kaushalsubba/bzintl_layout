@@ -227,9 +227,11 @@
     width: 80vw; }
     #fullpage .section div.item div.intro a {
       color: white;
-      text-transform: uppercase;
       font-weight: 700;
       line-height: 1.5em; }
+    #fullpage .section div.item div.intro p {
+      color: white;
+      text-transform: uppercase; }
 
 #fullpage .section div.item div.promos {
   width: 100%;
@@ -309,3 +311,9 @@ ul#homepage_navigation {
 ul#homepage_navigation li.active, ul#homepage_navigation li.active a {
   color: #5DDBBF;
   font-weight: bold; }
+
+@media only screen and (max-width: 992px) {
+  #fullpage .section div.item div.intro {
+    width: 100vw; }
+    #fullpage .section div.item div.intro a {
+      font-size: 0.75em; } }

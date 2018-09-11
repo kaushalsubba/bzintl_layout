@@ -12,7 +12,8 @@
 
       div.intro{
             padding:10px;margin-top:50px;padding:50px;text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);font-weight:bold;width:80vw;
-                a{color:white;text-transform:uppercase;font-weight: 700;line-height: 1.5em;}
+                a{color:white;font-weight: 700;line-height: 1.5em;}
+                p{color:white;text-transform:uppercase;}
             }
     }
 
@@ -51,3 +52,11 @@
         }
     }
   ul#homepage_navigation li.active,ul#homepage_navigation li.active a{color:#5DDBBF;font-weight:bold;}
+
+
+  @media only screen and (max-width: 992px) {
+    #fullpage .section div.item div.intro{
+        width:100vw;
+        a{font-size:0.75em;}
+    }
+  }
