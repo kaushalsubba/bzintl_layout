@@ -1,0 +1,25 @@
+/*Setup Bootstrap*/
+$primary:       #223a75;
+$secondary:     #5DDBBF;
+$body-bg:       $secondary;
+
+$border-radius:               .1rem;
+$border-radius-lg:            .1.5rem;
+$border-radius-sm:            .0;
+
+
+//$font-family-base:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+$font-family-base:"Open Sans", helvetica, arial, sans-serif;
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/*setting up fontawesome css*/
+$fa-font-path:"webfonts";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+/*Pushy:Pushy is a responsive off-canvas navigation menu*/
+$menu_width: 300px;
+@import "./node_modules/@cmyee/pushy/scss/pushy";
+
+/*bzintl css*/
+@import "bzintl.scss"
