@@ -2,6 +2,7 @@ var gulp=require('gulp');
 var sass=require('gulp-sass');
 var concat = require("gulp-concat");
 var uglifyCSS=require('gulp-uglifycss');
+var uglify = require('gulp-uglify');
 
 //create CSS
 gulp.task('create_css',function(){
@@ -17,11 +18,13 @@ var lib=[
     "./node_modules/jquery/dist/jquery.js",
     "./node_modules/bootstrap/dist/js/bootstrap.js",
     "./node_modules/@cmyee/pushy/js/pushy.js",
-    './node_modules/owl.carousel/dist/owl.carousel.js'
+    './node_modules/owl.carousel/dist/owl.carousel.js',
+    './src/js/puymodals.js'
 ];
 gulp.task('create_vendor_js',function(){
     gulp.src(lib)
         .pipe(concat("vendor.js"))
+        .pipe(uglify())
         .pipe(gulp.dest('assets/js'));
 });
 

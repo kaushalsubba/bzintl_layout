@@ -214,6 +214,9 @@
   min-height: 300px;
   background: no-repeat center center scroll; }
 
+#fullpage .section {
+  background-size: cover; }
+
 #fullpage .section div.item {
   position: relative;
   height: 100vh;
@@ -229,6 +232,8 @@
       color: white;
       font-weight: 700;
       line-height: 1.5em; }
+      #fullpage .section div.item div.intro a:hover {
+        text-decoration: none; }
     #fullpage .section div.item div.intro p {
       color: white;
       text-transform: uppercase; }
@@ -314,6 +319,20 @@ ul#homepage_navigation li.active, ul#homepage_navigation li.active a {
 
 @media only screen and (max-width: 992px) {
   #fullpage .section div.item div.intro {
-    width: 100vw; }
-    #fullpage .section div.item div.intro a {
-      font-size: 0.75em; } }
+    width: 100vw;
+    margin-top: 0;
+    padding: 30px; }
+    #fullpage .section div.item div.intro h1 {
+      font-size: 1.4em;
+      line-height: 1em; }
+    #fullpage .section div.item div.intro p {
+      font-size: 0.8em; }
+  #fullpage .section div.item div.promos {
+    bottom: 60px; }
+    #fullpage .section div.item div.promos div.promo {
+      padding: 10px;
+      min-height: 100px; }
+      #fullpage .section div.item div.promos div.promo h2 {
+        font-size: 1em; }
+  .owl-carousel .owl-dots {
+    top: 45%; } }

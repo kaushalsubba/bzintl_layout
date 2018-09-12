@@ -1,11 +1,14 @@
 $(document).ready(function(){
     //$(".owl-carousel").owlCarousel();
     $('.owl-carousel').owlCarousel({
-      stagePadding: 0,
-      items: 1,
-      loop:true,
-      margin:0,
-      singleItem:true,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+   
+        items : 1, 
+        itemsDesktop : false,
+        itemsDesktopSmall : false,
+        itemsTablet: false,
+        itemsMobile : false,
       /*
       nav:true,
       navText: [

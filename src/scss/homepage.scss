@@ -7,12 +7,16 @@
     background: no-repeat center center scroll;
   }
 
+  //#fullpage .section .owl-carousel div.item{border:1px solid green;}
+  #fullpage .section{background-size: cover;}
   #fullpage .section div.item {
       position:relative;height: 100vh;min-height: 300px;
 
       div.intro{
             padding:10px;margin-top:50px;padding:50px;text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);font-weight:bold;width:80vw;
-                a{color:white;font-weight: 700;line-height: 1.5em;}
+                a{color:white;font-weight: 700;line-height: 1.5em;
+                    &:hover{text-decoration: none;}
+                }
                 p{color:white;text-transform:uppercase;}
             }
     }
@@ -57,6 +61,20 @@
   @media only screen and (max-width: 992px) {
     #fullpage .section div.item div.intro{
         width:100vw;
-        a{font-size:0.75em;}
+        margin-top:0;
+        padding:30px;
+        h1{font-size:1.4em;line-height: 1em;}
+        a{}
+        p{font-size:0.8em;}
     }
+
+    #fullpage .section div.item div.promos{
+        bottom:60px;
+        div.promo{
+            padding:10px;min-height:100px;
+            h2{font-size:1em;}
+        }
+    }
+
+    .owl-carousel .owl-dots{top:45%;}	
   }
