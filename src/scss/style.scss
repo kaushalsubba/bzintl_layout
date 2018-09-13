@@ -9,7 +9,8 @@ $border-radius-sm:            0;
 
 
 //$font-family-base:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-$font-family-base:"Open Sans", helvetica, arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Karla');
+$font-family-base:'Karla', sans-serif;;
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 /*setting up fontawesome css*/
