@@ -1,3 +1,5 @@
+@import "variables";
+
 .fs-slides {
     display:block;
     width:100%;
@@ -13,11 +15,11 @@
       position:relative;height: 100vh;min-height: 300px;
 
       div.intro{
-            padding:10px;margin-top:50px;padding:50px;text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);font-weight:bold;width:80vw;
-                a{color:white;font-weight: 700;line-height: 1.5em;
+            padding:10px;margin-top:50px;padding:50px;text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);width:70vw;
+                a{color:white;font-weight: 700;line-height: 1.5em;font-weight:100;font-family: $font-family-secondary;
                     &:hover{text-decoration: none;}
                 }
-                p{color:white;text-transform:uppercase;}
+                p{color:white;text-transform:uppercase;font-weight: 600;}
             }
     }
 

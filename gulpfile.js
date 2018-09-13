@@ -16,7 +16,7 @@ gulp.task('create_css',function(){
 //compile vendor JS
 var lib=[
     "./node_modules/jquery/dist/jquery.js",
-    "./node_modules/bootstrap/dist/js/bootstrap.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
     "./node_modules/@cmyee/pushy/js/pushy.js",
     './node_modules/owl.carousel/dist/owl.carousel.js',
     './src/js/puymodals.js'

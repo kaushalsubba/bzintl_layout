@@ -17,6 +17,7 @@ div#bzintlShowcaseModal {
 /*pushy menu overwrite*/
 nav.pushy{
     top:76px;
+    button {font-weight:bold;color:white;}
     ul{
         padding:0;
         list-style: none;
@@ -29,7 +30,7 @@ nav.pushy{
     width: 85px;
     height: 75px;
     font-size:1.5em;
-    padding: 16px;
+    padding: 18px;
     text-align: center;
     margin:-30px 30px -30px -20px;
     cursor: pointer;
@@ -45,8 +46,8 @@ nav.pushy{
 
 /*hambuger Icon*/
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
-    //width: 60px;
-    //position: relative;
+    width: 60px;
+    position: relative;
     //margin: 50px auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -67,7 +68,7 @@ nav.pushy{
     background: white;
     border-radius: 0;
     opacity: 0.8;
-    left: 0;
+    right: 5px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -119,7 +120,12 @@ nav.pushy{
         background: white;
     }
 
-    article{padding:20px;}
+    article{
+        padding:30px;
+        h1 a{font-size:0.7em;font-family: $font-family-secondary;}
+    }
+
+    .tags label a{padding:10px;}
     }
 
 

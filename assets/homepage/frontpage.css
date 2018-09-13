@@ -226,17 +226,19 @@
     margin-top: 50px;
     padding: 50px;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
-    font-weight: bold;
-    width: 80vw; }
+    width: 70vw; }
     #fullpage .section div.item div.intro a {
       color: white;
       font-weight: 700;
-      line-height: 1.5em; }
+      line-height: 1.5em;
+      font-weight: 100;
+      font-family: Georgia, Times, Times New Roman, serif; }
       #fullpage .section div.item div.intro a:hover {
         text-decoration: none; }
     #fullpage .section div.item div.intro p {
       color: white;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 600; }
 
 #fullpage .section div.item div.promos {
   width: 100%;

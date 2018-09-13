@@ -1,16 +1,6 @@
+@import "variables";
 /*Setup Bootstrap*/
-$primary:       #223a75;
-$info:     #5DDBBF;
-$body-bg:       $info;
-
-$border-radius:               0;
-$border-radius-lg:            0;
-$border-radius-sm:            0;
-
-
-//$font-family-base:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-@import url('https://fonts.googleapis.com/css?family=Karla');
-$font-family-base:'Karla', sans-serif;;
+//@import url('https://fonts.googleapis.com/css?family=Karla');
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 /*setting up fontawesome css*/
@@ -23,4 +13,4 @@ $menu_width: 300px;
 @import "./node_modules/@cmyee/pushy/scss/pushy";
 
 /*bzintl css*/
-@import "bzintl.scss"
+@import "bzintl";

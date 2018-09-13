@@ -45,7 +45,7 @@ $(document).ready(function(){
     });
 
     /*tooltip*/
-    $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="tooltip"]').tooltip()
 
     /*pushy menu button togler*/
     $('.menu-btn').click(function(){
