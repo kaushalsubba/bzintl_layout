@@ -3,13 +3,26 @@ var sass=require('gulp-sass');
 var concat = require("gulp-concat");
 var uglifyCSS=require('gulp-uglifycss');
 var uglify = require('gulp-uglify');
+var fileinclude = require('gulp-file-include');
+var purgecss = require('gulp-purgecss');
+var sourcemaps = require('gulp-sourcemaps');
+
 
 //create CSS
 gulp.task('create_css',function(){
-    gulp.src(['src/scss/style.scss','./node_modules/owl.carousel/dist/assets/owl.carousel.css'])
+    return gulp.src(['src/scss/*.scss','./node_modules/owl.carousel/dist/assets/owl.carousel.css'])
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('style.css'))
-        .pipe(uglifyCSS())
+        //.pipe(concat('style.css'))
+        /*
+        .pipe(
+            purgecss({
+              content: ['*.html']
+            })
+          )
+        */
+        //.pipe(uglifyCSS())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('assets'));
 });
 
@@ -22,7 +35,7 @@ var lib=[
     './src/js/puymodals.js'
 ];
 gulp.task('create_vendor_js',function(){
-    gulp.src(lib)
+    return gulp.src(lib)
         .pipe(concat("vendor.js"))
         .pipe(uglify())
         .pipe(gulp.dest('assets/js'));
@@ -30,14 +43,14 @@ gulp.task('create_vendor_js',function(){
 
 //compile bzintl app.js
 gulp.task('create_app_js',function(){
-    gulp.src('src/js/app.js')
+    return gulp.src('src/js/app.js')
         .pipe(gulp.dest('assets/js'));
 });
 
 
 //setting up font awesome fonts
 gulp.task('copy_fa_fonts',function(){
-    gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
+    return gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
         .pipe(gulp.dest('assets/webfonts'));
 })
 
@@ -49,15 +62,31 @@ gulp.task('homepage_assets',function(){
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('assets/homepage'));
 
-    gulp.src([
+    return gulp.src([
         './node_modules/fullpage.js/dist/fullpage.min.js'
     ]).pipe(gulp.dest('assets/homepage'));
 });
 
+gulp.task('copy_htmls',function(){
+    return gulp.src('src/*.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./'));
+})
+
 
 //watching files
-gulp.task('default',['create_css','create_vendor_js','create_app_js','copy_fa_fonts','homepage_assets']);
+gulp.task('default',gulp.series('create_css','create_vendor_js','create_app_js','copy_fa_fonts','homepage_assets','copy_htmls'));
+//gulp.task('default',['create_css','create_vendor_js','create_app_js','copy_fa_fonts','homepage_assets']);
 
-gulp.task('watch',function(){
-    gulp.watch('src/scss/*.scss',['create_css','homepage_assets']);
-});
+
+
+function watchFiles() {
+    gulp.watch('src/scss/*.scss',gulp.series('create_css','homepage_assets'));
+    gulp.watch(['src/*.html','src/html_parts/*.html'],gulp.series('copy_htmls'));
+  }
+const watch = gulp.parallel(watchFiles);
+
+exports.watch = watch;

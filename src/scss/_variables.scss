@@ -2,9 +2,9 @@ $primary:       #223a75;
 $info:     #5DDBBF;
 $body-bg:       $info;
 
-$border-radius:               0;
-$border-radius-lg:            0;
-$border-radius-sm:            0;
+$btn-border-radius:30px;
+$btn-border-radius-lg:$btn-border-radius;
+$btn-border-radius-sm:$btn-border-radius;
 
 //$font-family-base:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 $font-family-base:Century Gothic,CenturyGothic,AppleGothic,sans-serif;

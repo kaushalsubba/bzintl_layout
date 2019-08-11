@@ -1,121 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('html_parts/header.html')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@@include('html_parts/side_nav.html')
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to BZ.IN.TL</title>
-
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/homepage/frontpage.css">
-</head>
-
-<body>
-
-<!-- Pushy Menu -->
-<nav class="pushy pushy-left">
-    <div class="pushy-content">
-        <ul>
-            <!-- Submenu -->
-            <li class="pushy-submenu">
-                <button><i class="fas fa-globe-asia"></i> Regions</button>
-                <ul>
-                    <li class="pushy-link"><a href="#">Asia</a>
-                    
-                        <ul>
-                                <li class="pushy-link"><a href="#">China</a></li>
-                                <li class="pushy-link"><a href="#">India</a></li>
-                                <li class="pushy-link"><a href="#">Vietnam</a></li>
-                        </ul>
-                </li>
-                <li class="pushy-link"><a href="#">Europe</a></li>
-                <li class="pushy-link"><a href="#">North America</a></li>
-                </ul>
-            </li>
-            <li class="pushy-submenu">
-                    <button><i class="fas fa-folder-open"></i> Resources</button>
-                    <ul>
-                            <li class="pushy-link"><a href="resources.html">All</a>
-                        <li class="pushy-link"><a href="#">Showcase</a>
-                        <li class="pushy-link"><a href="#">Q&A</a>
-                    </li>
-                    </ul>
-            </li>
-            <li class="pushy-submenu">
-                    <button><i class="fas fa-cogs"></i> Administration</button>
-                    <ul>
-                    <li class="pushy-link"><a href="#">Resources</a></li>
-                    <li class="pushy-link"><a href="#">Tags</a></li>
-                    <li class="pushy-link"><a href="#">Users</a></li>
-                    <li class="pushy-link"><a href="#">Showcase</a></li>
-                    <li class="pushy-link"><a href="#">Companies</a></li>
-                    </ul>
-            </li>
-            
-        </ul>
-    </div>
-</nav>
-
-        <nav class="navbar navbar-expand-lg bg-white">
-
-    <a href="#" class="navbar-dark menu-btn btn btn-primary rounded-0">
-        <div id="nav-icon1">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </a>
-    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.jpg" /></a>
-
-
-    <a href="#" class="navbar-light navbar-toggler btn btn-default" type="button" data-toggle="collapse"
-        data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span></a>
-
-    <div class="collapse navbar-collapse" id="top-navbar">
-        <form class="form-inline">
-            <div class="input-group col-12">
-                <input type="text" class="form-control input-lg" placeholder="Search for Q&A, infographic, multimedia and more " />
-            </div>
-        </form>
-
-        <div class="ml-auto">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link btn-sm" href="#" role="button"
-                        data-toggle="tooltip" data-placement="bottom" title="level"><strong><i class="fas fa-rocket"></i>
-                        LV:</strong> <span class="text-info">10</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link btn-sm" href="#" role="button"
-                        data-toggle="tooltip" data-placement="bottom" title="Reputation Point"><strong><i class="fas fa-trophy"></i>
-                        RP:</strong> <span class="text-info">0</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link btn-sm" href="#" role="button"
-                        data-toggle="tooltip" data-placement="bottom" title="Credit"><strong><i class="fas fa-credit-card"></i>
-                        CR:</strong> <span class="text-info">100</span></a></li>
-
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-users-cog"></i> Welcome James
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">My Profile</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"><strong><i class="fas fa-exchange-alt"></i> Switch
-                                    Company</strong></a>
-                            <a class="dropdown-item" href="#">BZ.IN.TL</a>
-                            <a class="dropdown-item" href="#">A Long Name Comp...</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Logout</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</nav>
+        @@include('html_parts/top_nav_logged.html')
 
 
         <div class="container-fluid bzintl_resources">
@@ -628,9 +515,4 @@
 
     </div><!--/#container-->
        
-<script src="assets/js/vendor.js"></script>
-<script src="assets/homepage/fullpage.min.js"></script>
-<script src="assets/js/app.js"></script>
-</body>
-
-</html>
+@@include('html_parts/footer.html')
