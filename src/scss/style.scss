@@ -5,8 +5,11 @@
 
 /*setting up fontawesome css*/
 $fa-font-path:"webfonts";
-@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
+// @import "./node_modules/@fortawesome/fontawesome-free/scss/brands";
+// @import "./node_modules/@fortawesome/fontawesome-free/scss/regular";
+
 
 /*Pushy:Pushy is a responsive off-canvas navigation menu*/
 $menu_width: 300px;
@@ -14,3 +17,4 @@ $menu_width: 300px;
 
 /*bzintl css*/
 @import "bzintl";
+@import "nischhal";

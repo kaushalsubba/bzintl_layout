@@ -31,6 +31,7 @@ ul.list-unstyled.rhs li{margin:8px 0;}
 
 /*pushy menu overwrite*/
 nav.pushy{
+    background-color: $primary !important;
     top:76px;
     button {font-weight:bold;color:white;}
     ul{
