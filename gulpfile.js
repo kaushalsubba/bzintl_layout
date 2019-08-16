@@ -6,14 +6,15 @@ var uglify = require('gulp-uglify');
 var fileinclude = require('gulp-file-include');
 var purgecss = require('gulp-purgecss');
 var sourcemaps = require('gulp-sourcemaps');
+const htmlmin = require('gulp-htmlmin');
 
 
 //create CSS
 gulp.task('create_css',function(){
-    return gulp.src(['src/scss/*.scss','./node_modules/owl.carousel/dist/assets/owl.carousel.css'])
+    return gulp.src(['src/scss/*.scss','./node_modules/owl.carousel/dist/assets/owl.carousel.min.css','./node_modules/owl.carousel/dist/assets/owl.theme.default.css'])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        //.pipe(concat('style.css'))
+        .pipe(concat('style.css'))
         /*
         .pipe(
             purgecss({
@@ -73,6 +74,7 @@ gulp.task('copy_htmls',function(){
       prefix: '@@',
       basepath: '@file'
     }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('./'));
 })
 
@@ -84,6 +86,7 @@ gulp.task('default',gulp.series('create_css','create_vendor_js','create_app_js',
 
 
 function watchFiles() {
+    gulp.watch('src/js/*.js',gulp.series('create_app_js'));
     gulp.watch('src/scss/*.scss',gulp.series('create_css','homepage_assets'));
     gulp.watch(['src/*.html','src/html_parts/*.html'],gulp.series('copy_htmls'));
   }

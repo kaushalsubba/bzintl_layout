@@ -233,27 +233,32 @@
   min-height: 300px; }
   #fullpage .section div.item div.intro {
     padding: 10px;
-    margin-top: 50px;
     padding: 50px;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
-    width: 70vw; }
+    width: 70vw;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; }
+    #fullpage .section div.item div.intro h1, #fullpage .section div.item div.intro h2, #fullpage .section div.item div.intro h1 a, #fullpage .section div.item div.intro h2 a {
+      font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+      font-weight: 300;
+      text-transform: uppercase; }
+    #fullpage .section div.item div.intro h1 {
+      font-size: 2rem; }
+    #fullpage .section div.item div.intro h2 {
+      font-size: 1.5rem; }
     #fullpage .section div.item div.intro a {
       color: white;
       font-weight: 700;
       line-height: 1.5em;
-      font-weight: 100;
-      font-family: Georgia, Times, Times New Roman, serif; }
+      font-weight: 100; }
       #fullpage .section div.item div.intro a:hover {
         text-decoration: none; }
     #fullpage .section div.item div.intro p {
-      color: white;
-      text-transform: uppercase;
-      font-weight: 600; }
+      color: white; }
 
 #fullpage .section div.item div.promos {
   width: 100%;
   position: absolute;
-  bottom: 80px;
+  bottom: 75px;
   border-top: 3px solid #5DDBBF; }
   #fullpage .section div.item div.promos div.promo {
     padding: 30px;
@@ -268,13 +273,13 @@
       #fullpage .section div.item div.promos div.promo:hover i {
         color: #5DDBBF; }
     #fullpage .section div.item div.promos div.promo h2 {
-      width: 100%;
+      width: 90%;
       margin: 0;
-      font-size: 1.8em;
+      font-size: 1.4rem;
       line-height: 35px;
       position: absolute;
       top: 30%; }
-    #fullpage .section div.item div.promos div.promo a {
+    #fullpage .section div.item div.promos div.promo p, #fullpage .section div.item div.promos div.promo a {
       color: white; }
 
 .owl-carousel button.owl-dot {
@@ -283,7 +288,8 @@
   background: white !important;
   border-radius: 8px;
   margin: 5px;
-  opacity: 0.8; }
+  opacity: 0.8;
+  border: 0; }
 
 .owl-carousel button.owl-dot.active {
   background: #5DDBBF !important; }
@@ -305,7 +311,7 @@
 ul#homepage_navigation {
   position: fixed;
   z-index: 999;
-  top: 45%;
+  top: 20%;
   right: 50px;
   list-style: none;
   margin: 0;
@@ -313,21 +319,32 @@ ul#homepage_navigation {
   ul#homepage_navigation li {
     margin: 10px;
     padding: 2px;
-    color: white; }
+    color: white;
+    clear: both; }
     ul#homepage_navigation li a {
       color: white;
       display: block;
-      width: 250px;
-      float: left;
-      text-align: right;
+      width: 290px;
       padding-right: 15px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: right; }
       ul#homepage_navigation li a:hover {
         text-decoration: none; }
 
 ul#homepage_navigation li.active, ul#homepage_navigation li.active a {
   color: #5DDBBF;
   font-weight: bold; }
+
+.stick_contact {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 105;
+  transform: rotate(270deg);
+  transform-origin: right bottom;
+  text-transform: uppercase; }
+  .stick_contact a {
+    color: #5DDBBF; }
 
 @media only screen and (max-width: 992px) {
   #fullpage .section div.item div.intro {

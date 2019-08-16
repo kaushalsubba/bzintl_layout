@@ -5,7 +5,12 @@ $body-bg:       $info;
 $btn-border-radius:30px;
 $btn-border-radius-lg:$btn-border-radius;
 $btn-border-radius-sm:$btn-border-radius;
+$btn-padding-x:1.5rem;
+
+$modal-content-border-radius:0;
+$input-border-radius:0;
 
 //$font-family-base:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 $font-family-base:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 $font-family-secondary:Georgia,Times,Times New Roman,serif;
+$font-family-heading:$font-family-base;
