@@ -44,11 +44,11 @@ nav.pushy{
 
 .menu-btn{
     width: 85px;
-    height: 75px;
+    height: 76px;
     font-size:1.5em;
-    padding: 18px;
+    padding: 22px 0 0 28px;
     text-align: center;
-    margin:-30px 30px -30px -20px;
+    margin:-30px 30px -30px -16px;
     cursor: pointer;
     border: 0px;
 
@@ -62,7 +62,7 @@ nav.pushy{
 
 /*hambuger Icon*/
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
-    width: 60px;
+    width: 40px;
     position: relative;
     //margin: 50px auto;
     -webkit-transform: rotate(0deg);
@@ -79,7 +79,7 @@ nav.pushy{
   #nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
     display: block;
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
     background: white;
     border-radius: 0;
@@ -100,15 +100,15 @@ nav.pushy{
   }
   
   #nav-icon1 span:nth-child(2) {
-    top: 18px;
+    top: 15px;
   }
   
   #nav-icon1 span:nth-child(3) {
-    top: 36px;
+    top: 30px;
   }
   
   #nav-icon1.open span:nth-child(1) {
-    top: 18px;
+    top: 15px;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -o-transform: rotate(135deg);
@@ -121,7 +121,7 @@ nav.pushy{
   }
   
   #nav-icon1.open span:nth-child(3) {
-    top: 18px;
+    top: 15px;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
