@@ -20,9 +20,7 @@
         <label><a class="badge badge-light" href="/resources/tag/172">Asia</a></label>
         <label><a class="badge badge-light" href="/resources/tag/236">China (People's Republic of)</a></label>
         <label><a class="badge badge-light" href="/resources/tag/401">Shaanxi Province</a></label>
-        <button href="#more_content_reveal" data-toggle="collapse" title="MORE TAGS" class="btn btn-primary btn-sm"
-            onclick="$(this).hide();"><i class="fas fa-plus"></i></button>
-        <div class="collapse" id="more_content_reveal">
+        <div class="d-none" id="more_content_reveal">
             <label><a class="badge badge-light" href="/resources/tag/444">English</a></label>
             <label><a class="badge badge-light" href="/resources/tag/686">Xi'an</a></label>
             <label><a class="badge badge-light" href="/resources/tag/4745">All Services</a></label>
@@ -32,14 +30,16 @@
             <label><a class="badge badge-light" href="/resources/tag/4988">Economic Development</a></label>
             <label><a class="badge badge-light" href="/resources/tag/5006">Infrastructure Development</a></label>
         </div>
+
+        <button data-toggle="collapse" title="MORE TAGS" class="btn btn-primary btn-sm btn_more_content_reveal"><i class="fas fa-plus"></i></button>
     </div>
 
 
     <br>
 
     <div class="row user_info clearfix">
-        <div class="col-2 col-lg-1">
-            <img width="60" height="60" class="pull-left avatar img-circle" src="http://bzintl.com/uploads/profile/20170811173257-ZE.png">
+        <div class="col-2 col-lg-1 p-1">
+            <img width="60" height="60" class="pull-left border border-grey rounded-circle" src="http://bzintl.com/uploads/profile/20170811173257-ZE.png">
         </div>
 
         <div class="col-5">
@@ -47,8 +47,8 @@
 
             </p>
             <div class="mini_credit">
-                <span class="level badge-secondary">LV 10</span>
-                <span class="reputation badge-primary">RP 0</span>
+                <span class="level badge-secondary border-top border-bottom border-left rounded-left">LV 10</span>
+                <span class="reputation badge-grey border-top border-bottom border-right rounded-right">RP 0</span>
             </div>
         </div>
     </div>
