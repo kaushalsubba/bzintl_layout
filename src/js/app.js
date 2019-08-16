@@ -38,9 +38,13 @@ $(document).ready(function(){
     });
 
     /* more tags show hide*/
+    i=1;
     $('.btn_more_content_reveal').click(function(){
-        $(this).hide();
-        $(this).next('div.more_content_reveal').show();
+        //$(this).hide();
+		//$(this).next('div.more_content_reveal').show();
+        var txt = $(this).prev('div#more_content_reveal').hasClass('d-none') ? '<i class="fas fa-minus"></i>' : '<i class="fas fa-plus"></i>';
+		$(this).html(txt);
+		$(this).prev('div#more_content_reveal').toggleClass('d-inline d-none');
     });
 
     /*tooltip*/
