@@ -1,0 +1,98 @@
+@@include('html_parts/header.html')
+
+@@include('html_parts/side_nav.html')
+
+@@include('html_parts/top_nav_logged.html')
+
+    <div class="banner"></div>
+    <div id="container" class="container bzintl_resources">
+
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-2 leftbar">
+                @@include('html_parts/resources_leftbar.html')
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 content overflow">
+                <div class="bg-primary fullwidth">
+                    <!--administration-->
+                    <div class="panel-group resourceAdmin" style="position:absolute;top:-5px;margin:0 -15px 100px -15px;width:100%;">
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1" class="collapsed" aria-expanded="false"><i class="fa fa-pencil-square" aria-hidden="true"></i> Resource Administration</a>
+                        </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                        
+                        <div class="row">
+                        <div class="col-sm-12">
+                            <div class="cleafix">
+                                <form method="post" action="/resources/savesettings" role="form">
+                        
+                        
+                                                <div class="form-group">
+                                                    <label class="col-sm-2 control-label">Level</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control" name="security_level" id="security_level">
+                                                            <option value="0" selected="selected">L0 - No Registration Required</option><option value="1">L1 - Individual Accounts</option><option value="2">L2 - Professional Account</option><option value="3">L3 - Investor Account</option><option value="4">L4 - Corporate User (Licensed)</option><option value="5">L5 - Corporate Admin</option><option value="6">L6 - Service Provider</option><option value="7">L7 - Service Firm User (Licensed)</option><option value="8">L8 - Service Firm Admin</option><option value="9">L9 - Content Curator Account</option><option value="10">L10 - System Admin</option>                                            
+                                                            
+                                                        </select>
+                                                    </div>
+                                                    </div>
+                        
+                                                                                        
+                                                    <div class="form-group" id="tags_template">
+                                                        <label class="col-sm-2 control-label">Tags</label>
+                                                        <div class="col-sm-10">
+                                                        <select name="locations[]" class="locations tokenize-sample" multiple="multiple" style="margin: 0px; padding: 0px; border: 0px; display: none;">
+                                                            <option value="1" selected="selected">All Industry</option><option value="148" selected="selected">All Job Function</option><option value="169" selected="selected">All Location</option><option value="444" selected="selected">English</option><option value="528" selected="selected">Business Intelligence Private Limited, Singapore</option><option value="5043" selected="selected">About Us</option><option value="5072" selected="selected">Contact Information</option><option value="5089" selected="selected">BZ.IN.TL</option>	                                      </select><div class="locations tokenize-sample Tokenize"><ul class="TokensContainer"><li class="Placeholder" style="display: none;">Tags: location, language, industry, topic</li><li class="Token" data-value="1"><a class="Close">×</a><span>All Industry</span></li><li class="Token" data-value="148"><a class="Close">×</a><span>All Job Function</span></li><li class="Token" data-value="169"><a class="Close">×</a><span>All Location</span></li><li class="Token" data-value="444"><a class="Close">×</a><span>English</span></li><li class="Token" data-value="528"><a class="Close">×</a><span>Business Intelligence Private Limited, Singapore</span></li><li class="Token" data-value="5043"><a class="Close">×</a><span>About Us</span></li><li class="Token" data-value="5072"><a class="Close">×</a><span>Contact Information</span></li><li class="Token" data-value="5089"><a class="Close">×</a><span>BZ.IN.TL</span></li><li class="TokenSearch"><input size="5"></li></ul><ul class="Dropdown" style="display: none;"></ul></div>
+                                                        </div>
+                                                    </div>
+                        
+                                                    
+                                    <div class="form-group">
+                                        
+                                    <div class="offset-sm-2 col-sm-10">
+                                        <input type="hidden" name="id" value="59">
+                        
+                                        
+                                        <button type="submit" class="btn btn-primary" name="publish_res_settings" id="publish_res_settings" value="publish">Update</button>
+                        
+                                        <button type="submit" class="btn btn-default" name="draft_res_settings" id="draft_res_settings" value="save_draft">UnPublish</button>
+                                        
+                                        <button data-toggle="collapse" href="#collapse1" class="btn btn-default collapsed" aria-expanded="false">Cancel</button>
+                        
+                                            
+                        
+                                    </div>
+                                    </div>
+                        
+                                </form>
+                        
+                            </div>
+                        
+                        </div>
+                        </div>
+                        
+                        </div><!--/panel-body-->
+                        </div>
+                        </div>
+                        </div><!--/administration panel-->
+
+                </div> <!--/fullwidth-->
+                @@include('html_parts/individual_resources_details.html')
+
+            </div>
+            <!--/col-->
+            <div class="col-12 col-sm-12 col-md-2 rightbar">
+                    @@include('html_parts/resources_rightbar.html')
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--/#container-->
+
+
+@@include('html_parts/footer.html')

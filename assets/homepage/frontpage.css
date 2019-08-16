@@ -235,10 +235,8 @@
     padding: 10px;
     padding: 50px;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
-    width: 70vw;
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; }
+    width: 70vw; }
     #fullpage .section div.item div.intro h1, #fullpage .section div.item div.intro h2, #fullpage .section div.item div.intro h1 a, #fullpage .section div.item div.intro h2 a {
-      font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
       font-weight: 300;
       text-transform: uppercase; }
     #fullpage .section div.item div.intro h1 {

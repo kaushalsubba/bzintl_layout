@@ -53,9 +53,27 @@ $(document).ready(function(){
     /*pushy menu button togler*/
     $('.menu-btn').click(function(){
 		$('#nav-icon1').toggleClass('open');
-	});
+    });
 
+    // Toggle Height
+    $('#toggleHeight').click(function(){
+        var el=$('.'+$(this).attr('data-parent-element'));
+        var height=$(this).attr('data-parent-height');
+
+        if(el.attr('data-click-state') == 1) {
+            el.attr('data-click-state', 0);
+            el.height( height )
+            $(this).html('Show More');
+        } else {
+            el.attr('data-click-state', 1);
+            el.css('height', 'auto');
+            $(this).html('Show Less');
+        }
+        return false;
+    })
 
     window.dispatchEvent(new Event('resize'));
 
 });
+
+//custom functions
