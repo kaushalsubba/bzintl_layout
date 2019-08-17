@@ -185,6 +185,7 @@ nav.pushy{
     }
 
     article{
+        h1.post-title{font-family: $font-family-heading-alternate;font-size:2rem;}
         padding:30px;
         h1 a{font-size:0.7em;}
     }
