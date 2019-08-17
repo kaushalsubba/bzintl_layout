@@ -11979,6 +11979,9 @@ nav.pushy {
     background: white; }
   .bzintl_resources article {
     padding: 30px; }
+    .bzintl_resources article h1.post-title {
+      font-family: Georgia, Times, Times New Roman, serif;
+      font-size: 2rem; }
     .bzintl_resources article h1 a {
       font-size: 0.7em; }
   .bzintl_resources .tags label a {
