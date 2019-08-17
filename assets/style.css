@@ -12009,7 +12009,8 @@ div.login_signup div.section {
 div.login_signup div.section.active {
   border-bottom: 3px solid #223a75; }
   div.login_signup div.section.active a {
-    color: #223a75; }
+    color: #223a75;
+    font-weight: 600; }
 
 /*Admin*/
 .form-group {
@@ -12020,20 +12021,43 @@ div.login_signup div.section.active {
 tr.row_disabled {
   color: #dc3545; }
   tr.row_disabled a {
-    color: #dc3545; }
+    color: #6c757d;
+    opacity: 0.75; }
 
 .bzintl_admin {
   margin-top: 20px; }
+  .bzintl_admin .form-group {
+    border-top: 1px solid #d8dbdd;
+    margin-bottom: 2rem; }
+  .bzintl_admin .form-group label:first-child {
+    font-weight: bold; }
   .bzintl_admin .posts {
     padding: 15px; }
     .bzintl_admin .posts h1 a {
       font-size: 0.7em; }
   .bzintl_admin .title {
     margin: 0 0 30px 0;
-    border-bottom: 2px solid #223a75;
     padding: 10px; }
   .bzintl_admin .form-group:focus {
     border-top: 1px solid #5DDBBF; }
+  .bzintl_admin #image_picker {
+    max-height: 300px;
+    overflow-y: scroll;
+    width: 100%;
+    margin: auto; }
+    .bzintl_admin #image_picker input {
+      display: none; }
+    .bzintl_admin #image_picker label {
+      margin: 10px;
+      border: none; }
+    .bzintl_admin #image_picker label.btn {
+      padding: 0;
+      border-radius: 0; }
+    .bzintl_admin #image_picker label.btn img {
+      margin: 5px;
+      border: 3px; }
+    .bzintl_admin #image_picker label.btn.active {
+      background: #5DDBBF; }
 
 @media only screen and (max-width: 992px) {
   .menu-btn {
