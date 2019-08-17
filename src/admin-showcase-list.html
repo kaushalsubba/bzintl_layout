@@ -1,0 +1,174 @@
+@@include('html_parts/header.html')
+
+@@include('html_parts/side_nav.html')
+
+@@include('html_parts/top_nav_logged.html')
+
+<div class="banner"></div>
+
+<div class="container bzintl_resources container bzintl_resources d-flex flex-row">
+    <div class="overflow showcase">
+        <div class="profile w-100">
+            <h2 class="text-white"><i class="fas fa-cogs"></i> BZ.IN.TL Administration | Showcase</h2>
+        </div>
+
+        <div class="posts">
+
+            <article>
+                <div class="row">
+                  <div class="col">
+                    
+                      <div class="card border-light">
+                          <div class="card-header bg-light">
+                            <h6 class="d-inline align-middle">Showcase Master Administration</h6>
+                            <a href="#" class="btn btn-primary float-right"><i class="fas fa-plus-square"></i>&nbsp; View all Resources</a>
+                          </div>
+
+                          <div class="card-body">
+                            
+                              <div class="table-responsive">
+                                  <table class="table" id="sliderList">
+                                      <thead class=" bg-light">
+                                        <tr>
+                                          <th>#</th>
+                                          <th>Title  <a href="#" data-toggle="tooltip" title="" data-original-title="Title of the showcase"><i class="fa fa-info pull-right" aria-hidden="true"></i></a></th>
+                                        <th>Background Image <a href="#" data-toggle="tooltip" title="" data-original-title="Front Page Background Image"><i class="fa fa-info pull-right" aria-hidden="true"></i></a></th>
+                                          
+                                          <th>Homepage  <a href="#" data-toggle="tooltip" title="" data-original-title="Promote to Homepage: Yes/No"><i class="fa fa-info pull-right" aria-hidden="true"></i></a></th>
+                                          <th>Status  <a href="#" data-toggle="tooltip" title="" data-original-title="Enable the showcase on website: Yes/No"><i class="fa fa-info pull-right" aria-hidden="true"></i></a></th>
+                                        
+                                          <th>Edit</th>
+                                          <th>Delete</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr id="row_1" class="row_disabled">
+                                          <td>1</td>
+                                          <td><a href="/showcase/economic-in-china" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class="fa fa-shopping-cart"></i> e-Commerce in China</a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="e-Commerce in China" style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="1" data-todo="0" data-column="display_homepage"><i class="fas fa-eye"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="1" data-todo="1" data-column="status"><i class="fas fa-eye-slash"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/1"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/1" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                         <tr id="row_9" class="row_disabled">
+                                          <td>2</td>
+                                          <td><a href="/showcase/markets-in-asia" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class="fa fa-square"></i> Labor Markets in Asia</a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="Labor Markets in Asia" style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="9" data-todo="0" data-column="display_homepage"><i class="fas fa-eye"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="9" data-todo="1" data-column="status"><i class="fas fa-eye-slash"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/9"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/9" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                         <tr id="row_10">
+                                          <td>3</td>
+                                          <td><a href="/showcase/urban-development-transformation" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class="fa-building-o"></i> Urban Development &amp; Transformation</a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="Urban Development &amp; Transformation" style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="10" data-todo="1" data-column="display_homepage"><i class="fas fa-eye-slash"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="10" data-todo="0" data-column="status"><i class="fas fa-eye"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/10"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/10" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                         <tr id="row_12">
+                                          <td>4</td>
+                                          <td><a href="/showcase/chamber-of-commerce-2-0" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class="fa-handshake-o"></i> Chamber of Commerce 2.0</a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="Chamber of Commerce 2.0" style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="12" data-todo="1" data-column="display_homepage"><i class="fas fa-eye-slash"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="12" data-todo="0" data-column="status"><i class="fas fa-eye"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/12"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/12" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                         <tr id="row_13" class="row_disabled">
+                                          <td>5</td>
+                                          <td><a href="/showcase/regional-competitiveness" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class="fa-globe"></i> Regional Competitiveness</a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="Regional Competitiveness" style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="13" data-todo="1" data-column="display_homepage"><i class="fas fa-eye-slash"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="13" data-todo="1" data-column="status"><i class="fas fa-eye-slash"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/13"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/13" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                         <tr id="row_15">
+                                          <td>6</td>
+                                          <td><a href="/showcase/about-bz-in-tl" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class="[]"></i> About BZ.IN.TL</a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="About BZ.IN.TL" style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="15" data-todo="0" data-column="display_homepage"><i class="fas fa-eye"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="15" data-todo="0" data-column="status"><i class="fas fa-eye"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/15"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/15" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                         <tr id="row_16">
+                                          <td>7</td>
+                                          <td><a href="/showcase/country-benchmarking" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class=""></i> Country Benchmarking</a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="Country Benchmarking" style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="16" data-todo="0" data-column="display_homepage"><i class="fas fa-eye"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="16" data-todo="0" data-column="status"><i class="fas fa-eye"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/16"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/16" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                         <tr id="row_17">
+                                          <td>8</td>
+                                          <td><a href="/showcase/selecting-investment-sites" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class=""></i> Selecting Investment Sites</a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="Selecting Investment Sites" style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="17" data-todo="0" data-column="display_homepage"><i class="fas fa-eye"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="17" data-todo="0" data-column="status"><i class="fas fa-eye"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/17"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/17" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                         <tr id="row_18">
+                                          <td>9</td>
+                                          <td><a href="/showcase/identifying-supplier-networks" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class=""></i> Identifying Supplier Networks</a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="Identifying Supplier Networks" style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="18" data-todo="0" data-column="display_homepage"><i class="fas fa-eye"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="18" data-todo="0" data-column="status"><i class="fas fa-eye"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/18"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/18" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                         <tr id="row_19">
+                                          <td>10</td>
+                                          <td><a href="/showcase/partnership-opportunties" target="_blank" data-toggle="tooltip" title="" data-original-title="Click to preview this showcase on new window"><i class=""></i> Partnership Opportunities </a></td>
+                                          <td> <img src="assets/img/sample_image_250x200.png" class="" alt="Partnership Opportunities " style="max-width:200px;"> </td>
+                                          
+                                          <!-- <td></td>-->
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="19" data-todo="0" data-column="display_homepage"><i class="fas fa-eye"></i></a></td>
+                                          <td><a class="updateSliderStatus" href="javascript:void(0);" data-sliderid="19" data-todo="0" data-column="status"><i class="fas fa-eye"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-edit-v2/19"><i class="fas fa-edit"></i></a></td>
+                                          <td><a href="/admin/homepage-slider-delete-v2/19" data-toggle="modal" data-target="#newSectionForm"><i class="fas fa-trash"></i></a></td>
+                                        </tr>
+                                       </tbody>
+                                      <tfoot>
+                                      </tfoot>
+                                    </table>
+                              </div>
+
+                          </div>
+                        </div><!--card-->
+
+                  </div><!--/col-->
+                </div>
+            </article>
+
+        </div>
+        <!-- posts -->
+    </div>
+    @@include('html_parts/admin-menu-rhs.html')
+</div>
+
+@@include('html_parts/footer.html')
