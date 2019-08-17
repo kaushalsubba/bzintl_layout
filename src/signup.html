@@ -1,0 +1,121 @@
+@@include('html_parts/header.html')
+@@include('html_parts/side_nav.html')
+
+@@include('html_parts/top_nav_logged.html')
+
+<div id="container" class="container bzintl_resources">
+<div class="row">
+	
+		<div class="col-sm-2">
+		</div><!--/left-->
+		
+		
+		<div class="center-box bg-white border-light mt-5 shadow-sm col-sm-8">
+			<div class="text-center">
+<h3>Welcome to BZ•IN•TL!</h3>
+<p>Where your actionable business intelligence is knowing what questions to ask.</p>
+</div>
+
+<div class="row login_signup">
+    <div class="col-sm-6 section"><a href="/users/login" class="btn btn-link">Login</a></div>
+    <div class="col-sm-6 section active"><a href="/users/signup" class="btn btn-link">Signup</a></div>
+    <div class="col-sm-8 offset-sm-2">
+
+        <div class="row">
+
+            <div class="col-sm-12">
+                    <form id="login-form" action="/users/register" method="post" role="form" class="mt-5">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                <select name="salutation" class="form-control" required="required">
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Miss">Miss</option>
+                                    <option value="Dr.">Dr.</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-6 is-empty">
+                                    <label class="control-label" for="first_name">Enter your first name</label>
+                                    <input type="text" name="first_name" id="first_name" placeholder="" class="form-control" required="required">
+                                                    <div class="row" id="suggest_first_name"></div>
+                                </div>
+                                <div class="col-sm-6 is-empty">
+                                    <label class="control-label" for="last_name">Enter your last name</label>
+                                    <input type="text" name="last_name" id="last_name" placeholder="" class="form-control" required="required">
+                                                    <div class="row" id="suggest_last_name"></div>
+                                </div>
+                            </div>
+                                    
+                    
+                    
+                    
+                        </div>
+                    
+                    
+                            <div class="form-group">
+                                <div class="row">
+                            <div class="col-sm-12 is-focus is-empty">
+                            <label class="control-label" for="screen_name">Enter Screen Name</label>
+                            <input type="text" name="screen_name" id="screen_name" placeholder="" class="form-control" required="required">
+                                    </div>
+                                    <div class="row" id="suggest_screen_name">
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                            <div class="col-sm-12 is-empty">
+                            <label class="control-label" for="email">Enter your email address</label>
+                            <input type="email" name="email" id="email" placeholder="" class="form-control" required="required">
+                            </div>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <div class="row">
+                            <div class="col-sm-12 is-empty">
+                                <label class="control-label" for="password">Set your password</label>
+                                <input type="password" name="password" id="password" placeholder="" class="form-control" required="required">
+                            </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <p class="text-center"><small>By signing up, I agree to your Terms of Service&nbsp;and&nbsp;Privacy Policy.</small></p>
+
+                        <input type="hidden" name="redirect" value="">
+                        <input type="hidden" name="step" value="1">
+                        
+                        <p class="text-center mt-5">
+                        <input type="submit" value="Sign Up" class="btn btn-primary">
+                        </p>
+                    
+                    </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>		</div><!--/left-->
+		
+		
+		<div class="col-sm-2">
+		</div><!--/left-->
+	
+</div>
+
+
+</div>
+<!--/#container-->
+
+
+@@include('html_parts/footer.html')

@@ -1,0 +1,65 @@
+@@include('html_parts/header.html')
+@@include('html_parts/side_nav.html')
+
+@@include('html_parts/top_nav_logged.html')
+
+<div id="container" class="container bzintl_resources">
+<div class="row">
+	
+		<div class="col-sm-2">
+		</div><!--/left-->
+		
+		
+		<div class="center-box bg-white border-light mt-5 shadow-sm col-sm-8">
+			<div class="text-center">
+<h3>Welcome to BZ•IN•TL!</h3>
+<p>Where your actionable business intelligence is knowing what questions to ask.</p>
+</div>
+
+<div class="row login_signup">
+    <div class="col-sm-6 section active"><a href="/users/login" class="btn btn-link">Login</a></div>
+    <div class="col-sm-6 section"><a href="/users/signup" class="btn btn-link">Signup</a></div>
+    <div class="col-sm-8 offset-sm-2">
+
+        <div class="row">
+
+            <div class="col-sm-12">
+            <form id="login-form" action="/users/login" method="post" role="form" class="mt-5">
+                <div class="form-group is-empty">
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Enter your email address" required="required" value="" style="cursor: auto;">
+                </div>
+                <div class="form-group is-empty">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Enter your password" required="required" style="cursor: auto;">
+                </div>
+
+                    <input type="hidden" name="redirect" value="">
+                
+
+                <p class="text-center"><small>By logging in, I agree to your Terms of Service&nbsp;and&nbsp;Privacy Policy.</small></p>
+
+                <p class="text-center mt-5">
+                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="btn btn-raised btn-primary" value="Log In">
+                    <a href="#" class="btn btn-light">Forgot Password?</a>
+                </p>
+
+
+            </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>		</div><!--/left-->
+		
+		
+		<div class="col-sm-2">
+		</div><!--/left-->
+	
+</div>
+
+
+</div>
+<!--/#container-->
+
+
+@@include('html_parts/footer.html')

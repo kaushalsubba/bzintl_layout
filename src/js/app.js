@@ -74,6 +74,14 @@ $(document).ready(function(){
 
     window.dispatchEvent(new Event('resize'));
 
+    setTimeout(function() {
+        $("#hp_instruction").animate({
+            opacity: 0
+        }, 500, function(){
+            $("#hp_instruction").hide(); //alt $(this).slideUp(400);
+        });
+    }, 5000);
+
 });
 
 //custom functions
