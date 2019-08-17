@@ -12,7 +12,8 @@
 }
 
 .overflow .profile {
-    background-color: #223a75;
+    background-color: $primary;
+    border-top:3px solid $info;
     // didn't work $primary
     height: auto;
     width: 350px;
