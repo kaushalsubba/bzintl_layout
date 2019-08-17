@@ -205,6 +205,7 @@ nav.pushy{
 .center-box{
   min-height: 500px;
   padding-top: 30px;
+  // border:1px solid;
 }
 div.login_signup {
   div.section{
@@ -214,7 +215,7 @@ div.login_signup {
   }
   div.section.active{
     border-bottom: 3px solid $primary;
-    a{color:$primary;}
+    a{color:$primary;font-weight:600;}
   }
 }
 
@@ -222,24 +223,37 @@ div.login_signup {
 .form-group{background:#f8f9fa;margin:10px;padding:10px;}
 tr.row_disabled{
   color:$red;
-  a{color:$red;}
+  a{color:$secondary;opacity:0.75;}
 }
 
 .bzintl_admin{
   margin-top: 20px;
 
+  .form-group{border-top:1px solid lighten($secondary,40%);margin-bottom:2rem;}
+  .form-group label:first-child {font-weight: bold;}
   .posts{
       padding:15px;
       h1 a{font-size:0.7em;}
   }
 
   .title{
-    margin:0 0 30px 0;border-bottom:2px solid $primary;
+    margin:0 0 30px 0;
     padding:10px;
   }
 
   .form-group:focus{
     border-top:1px solid $info;
+  }
+
+  // Imagepicker
+  #image_picker{
+    max-height: 300px;overflow-y: scroll;width:100%;margin:auto;
+
+    input{display:none;}
+    label{margin:10px;border:none;}
+    label.btn {padding:0;border-radius:0;}
+    label.btn img{margin:5px;border:3px;}
+    label.btn.active{background:$info;}
   }
   }
 

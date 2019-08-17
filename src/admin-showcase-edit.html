@@ -40,7 +40,7 @@
                     </div><!--/form-group-->
 
                     <div class="form-group">
-                        <label class="d-block" for="showcase_slug">
+                        <label class="d-block" for="icon">
                             Icon for homepage: 
   
                             <div class="float-right">
@@ -55,9 +55,292 @@
                         </small>
                     </div><!--/form-group-->
 
+                    <div class="form-group">
+                            <label class="d-block" for="showcase_description">
+                                Description of the showcase
+      
+                                <div class="float-right">
+                                <span class="badge badge-info" data-toggle="tooltip" title="" data-original-title="Effects showcase page">S</span>
+                                </div>
+                            </label>
+                            <textarea name="showcase_description" id="showcase_description" class="form-control"></textarea>
+                    </div><!--/form-group-->
+
+                    <div class="form-group">
+                            <label class="d-block" for="url">
+                                URL: 
+      
+                                <div class="float-right">
+                                <span class="badge badge-primary" data-toggle="tooltip" title="" data-original-title="Effects homepage">H</span>
+                                </div>
+                            </label>
+                            <input type="url" class="form-control" id="url" name="url" placeholder="Enter third-party url if any" value="">
+                            <small id="titleHelp" class="form-text text-muted">
+                                URL of the showcase that will be used, leave blank if you want to link it to default website's showcase page.
+                            </small>
+                    </div><!--/form-group-->
+
+
+                    <div class="form-group">
+                            <label class="d-block" for="tags">
+                                Tags Related to this showcase 
+      
+                                <div class="float-right">
+                                    <span class="badge badge-info" data-toggle="tooltip" title="" data-original-title="Effects showcase page">S</span>
+                                </div>
+                            </label>
+                            <select name="locations[]" id="tags" class="locations tokenize-sample form-control" multiple="multiple">
+                                <option value="">...</option>
+                            </select>
+                            <small id="titleHelp" class="form-text text-muted">
+                                Tags will power ALL the resources for this showcase page.
+                            </small>
+                    </div><!--/form-group-->
+
+                    <div class="form-group">
+                            <label class="d-block" for="status">
+                                Showcase Status: 
+      
+                                <div class="float-right">
+                                <span class="badge badge-primary" data-toggle="tooltip" title="" data-original-title="Effects homepage">H</span>
+                                <span class="badge badge-info" data-toggle="tooltip" title="" data-original-title="Effects showcase page">S</span>
+                                </div>
+                            </label>
+                            <label class="radio-inline"><input id="status" type="radio" name="status" value="1" checked="checked"><span class="circle"></span><span class="check"></span> Enable</label>
+                            &nbsp;
+                            <label class="radio-inline"><input type="radio" name="status" value="0"><span class="circle"></span><span class="check"></span> Disable</label>
+                            <small id="titleHelp" class="form-text text-muted">
+                                Global status of showcase, if disabled, it will NOT appear anywhere on the site.
+                            </small>
+                    </div><!--/form-group-->
+
+                    <div class="form-group">
+                            <label class="d-block" for="display_homepage">
+                                Homepage:
+      
+                                <div class="float-right">
+                                    <span class="badge badge-info" data-toggle="tooltip" title="" data-original-title="Effects showcase page">S</span>
+                                </div>
+                            </label>
+                            <select name="display_homepage" id="display_homepage" class="form-control">
+                                    <option value="1" selected="selected">Yes</option><option value="0">No</option>
+                                </select>
+                            <small id="titleHelp" class="form-text text-muted">
+                                Select if you want to promote this showcase to homepage.
+                            </small>
+                    </div><!--/form-group-->
+
+
+                    <div class="form-group">
+                            <label class="d-block" for="display_homepage">
+                                Background Image:
+      
+                                <div class="float-right">
+                                        <span class="badge badge-primary" data-toggle="tooltip" title="" data-original-title="Effects homepage">H</span>
+                                </div>
+                            </label>
+
+                            <p class="text-muted">SELECT FROM ONE OF THE BELOW BACKGROUNDS</p>
+                            <div id="image_picker" class="row">
+
+                                    <div class="group-images-radio" data-toggle="buttons">
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="1.jpg" value="1.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/1.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="10.jpg" value="10.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/10.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="11.jpg" value="11.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/11.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="12.jpg" value="12.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/12.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="13.jpg" value="13.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/13.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="14.jpg" value="14.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/14.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="15.jpg" value="15.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/15.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="16.jpg" value="16.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/16.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="17.jpg" value="17.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/17.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="18.jpg" value="18.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/18.jpg">
+                                      </label>
+                        
+                                            
+                                      <label class="btn btn-primary btn-sm-3  ">
+                                        <input type="radio" name="system_background_image" id="19.jpg" value="19.jpg" autocomplete="off">
+                                        <img src="http://images.bzintl.com/resize/150x150/files/bgs/19.jpg">
+                                      </label>
+                        
+                                    </div>
+                                    
+                        
+                                        <div class="col-sm-4">
+                                            
+                                        </div>
+                        
+                                </div><!--/imagepicker-->
+
+                            <small id="titleHelp" class="form-text text-muted">
+                                Select the background of the showcase if it's promoted to homepage.
+                            </small>
+                    </div><!--/form-group-->
+
+
+                    <div class="form-group">
+                            <label class="d-block" for="display_homepage">
+                                Sections:
+      
+                                <div class="float-right">
+                                    <span class="badge badge-info" data-toggle="tooltip" title="" data-original-title="Effects showcase page">S</span>
+                                </div>
+                            </label>
+                            
+                            <div id="section-container">
+                                    <p class="mb-3 text-right">
+                                        <a href="/admin/homepage-section-add-v2/16" data-toggle="modal" data-target="#newSectionForm" class="btn btn-primary  btn-raised"><i class="glyphicon glyphicon-plus"></i> Create New Section</a>
+                                    </p>
+                                    
+                                    <table class="table table-bordered">
+                                      <thead>
+                                        <tr>
+                                          <th>#</th>
+                                          <th>Title</th>
+                                          <th>Status</th>
+                                          <th>Edit</th>
+                                          <th>Delete</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                          <td>1</td>
+                                          <td>How to Select the Country Best Suited to Your Investment Needs and Your Industry</td>
+                                          <td>1</td>
+                                          <td><a href="/admin/homepage-section-edit-v2/80" data-toggle="modal" data-target="#newSectionForm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+                                          <td><a href="/admin/homepage-section-delete-v2/80" data-toggle="modal" data-target="#newSectionForm"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                        </tr>
+                                         <tr>
+                                          <td>2</td>
+                                          <td>Understanding the Growing Importance of Regional Intelligence</td>
+                                          <td>1</td>
+                                          <td><a href="/admin/homepage-section-edit-v2/84" data-toggle="modal" data-target="#newSectionForm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+                                          <td><a href="/admin/homepage-section-delete-v2/84" data-toggle="modal" data-target="#newSectionForm"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                        </tr>
+                                         <tr>
+                                          <td>3</td>
+                                          <td>Country Selection is Just the Beginning</td>
+                                          <td>1</td>
+                                          <td><a href="/admin/homepage-section-edit-v2/85" data-toggle="modal" data-target="#newSectionForm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+                                          <td><a href="/admin/homepage-section-delete-v2/85" data-toggle="modal" data-target="#newSectionForm"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                        </tr>
+                                       </tbody>
+                                      <tfoot>
+                                      </tfoot>
+                                    </table>
+                                    
+                                    
+                                    
+                                    <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                    
+                                        <li class="active"><a href="/admin/homepage-slider-v2/?page=1"> 1 </a></li>
+                                    
+                                    </ul></nav>
+                                        
+                                        
+                                    
+                                        
+                                        
+                                        <script type="text/javascript">
+                                    $('#newSectionForm').on('hide.bs.modal', function (e) {
+                                      $('#newSectionForm').removeData('bs.modal');
+                                        console.log('close section add form');
+                                    });	
+                                            
+                                    //$('#newSectionForm').on('click',"button#post_section_v2", function(e){
+                                    $( document ).delegate( "form#section_v2_form", "submit", function(e) {	
+                                        e.preventDefault(); //STOP default action
+                                        var formURL = $(this).attr("action");
+                                        $.ajax({
+                                                        type: "POST",
+                                                        url: formURL,
+                                                        data: $('#section_v2_form').serialize(),
+                                                        //processData: true, 
+                                                        //contentType: true,
+                                                        success: function(msg){
+                                                            obj = $.parseJSON(msg);
+                                    
+                                                            if(obj.error){
+                                                                $('#response_msg').html('<div class="alert alert-danger">'+obj.error+'</div>');
+                                                            }
+                                                            if(obj.success){
+                                                                $('#response_msg').html('<div class="alert alert-success">'+obj.success+'</div>');
+                                                                $("#newSectionForm").modal('hide');
+                                                                if(obj.redirect_page){
+                                                                    location.replace(obj.redirect_page);
+                                                                }else{
+                                                                                                    $('#response_msg').html('<img src="/img/ajax-loader.gif" >');
+                                                                    loadSection('16');	
+                                                                }
+                                    
+                                                            }
+                                                        },
+                                                        error: function(){
+                                                            console.log("failure: Internet Connection");
+                                                        }
+                                                    });
+                                        
+                                        
+                                        
+                                    });	
+                                    </script>
+                            </div>
+
+                            <small id="titleHelp" class="form-text text-muted">
+                                Create various promotionals sections for the showcase.
+                            </small>
+                    </div><!--/form-group-->
+
                     
                     <p class="text-center mt-5">
-                            <p>Work In Progress...</p>
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </p>
                 </form>
