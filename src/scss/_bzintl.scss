@@ -2,6 +2,9 @@
 body{
   font-family:$font-family-general;
   font-size:14px;
+  // background-color: #f5f5f5;
+  background:#f5f5f5 linear-gradient(darken(#f5f5f5,5%),#f5f5f5) no-repeat;
+  height:100%;
 }
 h1,h2,h3,h4,h5{
   font-family: $font-family-heading;
@@ -198,6 +201,22 @@ nav.pushy{
   padding:20px;
 }
 
+/*Login*/
+.center-box{
+  min-height: 500px;
+  padding-top: 30px;
+}
+div.login_signup {
+  div.section{
+    border-bottom: 3px solid $secondary;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  div.section.active{
+    border-bottom: 3px solid $primary;
+    a{color:$primary;}
+  }
+}
 
 /*Admin*/
 .form-group{background:#f8f9fa;margin:10px;padding:10px;}
@@ -212,6 +231,15 @@ tr.row_disabled{
   .posts{
       padding:15px;
       h1 a{font-size:0.7em;}
+  }
+
+  .title{
+    margin:0 0 30px 0;border-bottom:2px solid $primary;
+    padding:10px;
+  }
+
+  .form-group:focus{
+    border-top:1px solid $info;
   }
   }
 

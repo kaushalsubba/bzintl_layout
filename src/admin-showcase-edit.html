@@ -13,23 +13,53 @@
         </div>
 
         <div class="posts">
-                <h4>Edit: e-Commerce in China</h4>
+                <h4 class="title">Edit: e-Commerce in China</h4>
 
                 <form>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
+                      <label class="d-block" for="title">
+                          Title of the showcase:
+
+                          <div class="float-right">
+                          <span class="badge badge-info" data-toggle="tooltip" title="" data-original-title="Effects showcase page">S</span>
+                          <span class="badge badge-primary" data-toggle="tooltip" title="" data-original-title="Effects homepage">H</span>
+                          </div>
+                      </label>
+                      <input type="text" class="form-control" id="title" name="title" placeholder="Enter Tittle" required="" value="e-Commerce in China" onkeyup="convertToSlug('showcase_slug',this.value)" style="cursor: auto;">
+                    </div><!--/form-group-->
+
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                        <label class="d-block" for="showcase_slug">
+                            SEO / Slug:
+  
+                            <div class="float-right">
+                            <span class="badge badge-info" data-toggle="tooltip" title="" data-original-title="Effects showcase page">S</span>
+                            </div>
+                        </label>
+                        <input type="text" class="form-control" id="showcase_slug" name="showcase_slug" placeholder="Enter Slug" required="" value="economic-in-china" onkeyup="convertToSlug('showcase_slug',this.value)">
+                    </div><!--/form-group-->
+
+                    <div class="form-group">
+                        <label class="d-block" for="showcase_slug">
+                            Icon for homepage: 
+  
+                            <div class="float-right">
+                            <span class="badge badge-info" data-toggle="tooltip" title="" data-original-title="Effects showcase page">S</span>
+                            <span class="badge badge-primary" data-toggle="tooltip" title="" data-original-title="Effects homepage">H</span>
+                            </div>
+                        </label>
+                        <input type="text" class="form-control" id="icon" name="icon" placeholder="Enter Glyphicons" required="" value="fa fa-shopping-cart">
+                        <small id="titleHelp" class="form-text text-muted">
+                            Click on following links to know the option for the icons
+                            <a href="https://fontawesome.com/v4.7.0/cheatsheet/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </small>
+                    </div><!--/form-group-->
+
+                    
+                    <p class="text-center mt-5">
+                            <p>Work In Progress...</p>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </p>
                 </form>
         </div>
         <!-- posts -->

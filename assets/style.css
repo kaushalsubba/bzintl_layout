@@ -1,3 +1,11 @@
+#hp_instruction {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  z-index: 999; }
+
 .fs-slides {
   display: block;
   width: 100%;
@@ -19,19 +27,23 @@
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
     width: 70vw; }
     #fullpage .section div.item div.intro h1, #fullpage .section div.item div.intro h2, #fullpage .section div.item div.intro h1 a, #fullpage .section div.item div.intro h2 a {
-      font-weight: 300;
-      text-transform: uppercase; }
+      font-weight: 300; }
     #fullpage .section div.item div.intro h1 {
-      font-size: 2rem; }
+      font-size: 3rem;
+      line-height: 3.5rem;
+      margin-bottom: 40px;
+      max-width: 1000px; }
+      #fullpage .section div.item div.intro h1 a {
+        font-weight: bold; }
     #fullpage .section div.item div.intro h2 {
       font-size: 1.5rem; }
     #fullpage .section div.item div.intro a {
-      color: white;
-      font-weight: 700;
-      line-height: 1.5em;
-      font-weight: 100; }
+      color: white; }
       #fullpage .section div.item div.intro a:hover {
         text-decoration: none; }
+      #fullpage .section div.item div.intro a.btn {
+        font-size: 1.3rem;
+        font-weight: 100; }
     #fullpage .section div.item div.intro p {
       color: white; }
 
@@ -39,13 +51,13 @@
   width: 100%;
   position: absolute;
   bottom: 75px;
-  border-top: 3px solid #5DDBBF; }
+  border-top: 3px solid white; }
   #fullpage .section div.item div.promos div.promo {
     padding: 30px;
     min-height: 200px;
     background-color: rgba(0, 0, 0, 0.55);
     text-align: center;
-    border-right: 2px solid black;
+    border-right: 3px solid white;
     transition: width 2s;
     position: relative; }
     #fullpage .section div.item div.promos div.promo:hover {
@@ -53,14 +65,26 @@
       #fullpage .section div.item div.promos div.promo:hover i {
         color: #5DDBBF; }
     #fullpage .section div.item div.promos div.promo h2 {
-      width: 90%;
+      font-family: Georgia, Times, Times New Roman, serif;
       margin: 0;
       font-size: 1.4rem;
-      line-height: 35px;
+      width: 90%;
       position: absolute;
-      top: 30%; }
+      top: 30%;
+      max-height: 70px;
+      overflow: hidden;
+      text-align: center;
+      font-style: italic; }
     #fullpage .section div.item div.promos div.promo p, #fullpage .section div.item div.promos div.promo a {
       color: white; }
+    #fullpage .section div.item div.promos div.promo .arrow {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      color: white;
+      font-size: 1.5em; }
+  #fullpage .section div.item div.promos div.promo:last-child {
+    border-right: none; }
 
 .owl-carousel button.owl-dot {
   width: 15px;
@@ -69,16 +93,17 @@
   border-radius: 8px;
   margin: 5px;
   opacity: 0.8;
-  border: 0; }
+  border: 0;
+  opacity: 0.5; }
 
 .owl-carousel button.owl-dot.active {
-  background: #5DDBBF !important; }
+  opacity: 1; }
 
 .owl-carousel .owl-dots {
   position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center; }
+  top: 40%;
+  width: auto;
+  left: 50px; }
 
 #fullpage .cycle-prev {
   text-align: right; }
@@ -146,6 +171,14 @@ ul#homepage_navigation li.active, ul#homepage_navigation li.active a {
   .owl-carousel .owl-dots {
     top: 45%; } }
 
+@media (min-width: 1400px) {
+  .owl-carousel .owl-dots {
+    top: 35%; } }
+
+@media (min-width: 1900px) {
+  .owl-carousel .owl-dots {
+    top: 25%; } }
+
 .banner {
   height: 300px;
   background-image: url("https://images.unsplash.com/photo-1481246516418-7250f352b06f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
@@ -193,9 +226,6 @@ ul#homepage_navigation li.active, ul#homepage_navigation li.active a {
 
 .text-info {
   color: #5DDBBF; }
-
-body {
-  background-color: #f5f5f5; }
 
 .rightbar li.active {
   border-left: 4px solid #223a75; }
@@ -11755,7 +11785,9 @@ readers do not read off random characters that represent icons */
 /*Typography*/
 body {
   font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  background: #f5f5f5 linear-gradient(#e8e8e8, #f5f5f5) no-repeat;
+  height: 100%; }
 
 h1, h2, h3, h4, h5 {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
@@ -11964,6 +11996,21 @@ nav.pushy {
   margin-right: -15px;
   padding: 20px; }
 
+/*Login*/
+.center-box {
+  min-height: 500px;
+  padding-top: 30px; }
+
+div.login_signup div.section {
+  border-bottom: 3px solid #6c757d;
+  text-align: center;
+  text-transform: uppercase; }
+
+div.login_signup div.section.active {
+  border-bottom: 3px solid #223a75; }
+  div.login_signup div.section.active a {
+    color: #223a75; }
+
 /*Admin*/
 .form-group {
   background: #f8f9fa;
@@ -11981,6 +12028,12 @@ tr.row_disabled {
     padding: 15px; }
     .bzintl_admin .posts h1 a {
       font-size: 0.7em; }
+  .bzintl_admin .title {
+    margin: 0 0 30px 0;
+    border-bottom: 2px solid #223a75;
+    padding: 10px; }
+  .bzintl_admin .form-group:focus {
+    border-top: 1px solid #5DDBBF; }
 
 @media only screen and (max-width: 992px) {
   .menu-btn {
@@ -12040,9 +12093,6 @@ tr.row_disabled {
 
 .text-info {
   color: #5DDBBF; }
-
-body {
-  background-color: #f5f5f5; }
 
 .rightbar li.active {
   border-left: 4px solid #223a75; }
