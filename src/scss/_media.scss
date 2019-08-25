@@ -1,0 +1,40 @@
+@include media-breakpoint-down(sm) {
+
+    // Top nav customization
+    .navbar .navbar-collapse {
+        .navbar-nav .nav-item {
+
+            &:nth-child(2),
+            :nth-child(3),
+            :nth-child(4) {
+                display: none;
+            }
+        }
+    }
+
+    // overwriting frontpage fullheight display
+    #fullpage .section div.item {
+        height: 100vh !important;
+    }
+
+    .arrow .fa {
+        display: none;
+    }
+
+    .promos .promo {
+        display: flex;
+        flex-direction: row;
+        p {
+            margin: 0;
+            line-height: 15px;
+            border: 1px solid red;
+        }
+
+        h2 {
+            margin-top: 10px;
+            line-height: 15px;
+            text-align: left;
+        }
+    }
+
+}
