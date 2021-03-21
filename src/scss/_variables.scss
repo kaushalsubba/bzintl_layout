@@ -1,6 +1,8 @@
-$primary:       #223a75;
-$info:     #5DDBBF;
-$body-bg:       $info;
+$primary: #223a75;
+$info: #5DDBBF;
+$body-bg: $info;
+
+$yellow: #fff9c6;
 
 $btn-border-radius:30px;
 $btn-border-radius-lg:$btn-border-radius;
@@ -11,6 +13,18 @@ $modal-content-border-radius:0;
 $input-border-radius:0;
 
 //$font-family-base:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-$font-family-heading:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-$font-family-heading-alternate:Georgia,Times,Times New Roman,serif;
-$font-family-general:Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif; ;
+$font-family-heading:Century Gothic,
+CenturyGothic,
+AppleGothic,
+sans-serif;
+$font-family-heading-alternate:Georgia,
+Times,
+Times New Roman,
+serif;
+$font-family-general:Lucida Grande,
+Lucida Sans Unicode,
+Lucida Sans,
+Geneva,
+Verdana,
+sans-serif;
+;

@@ -25,5 +25,7 @@
     "jquery": "^3.4.1",
     "owl.carousel": "^2.3.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
 }

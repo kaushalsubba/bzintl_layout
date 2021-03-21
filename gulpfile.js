@@ -17,7 +17,7 @@ gulp.task('create_css',function(){
         .pipe(concat('style.css'))
         /*
         .pipe(
-            purgecss({
+            purgecss({`
               content: ['*.html']
             })
           )

@@ -244,7 +244,10 @@
     padding: 50px;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
     width: 70vw; }
-    #fullpage .section div.item div.intro h1, #fullpage .section div.item div.intro h2, #fullpage .section div.item div.intro h1 a, #fullpage .section div.item div.intro h2 a {
+    #fullpage .section div.item div.intro h1,
+    #fullpage .section div.item div.intro h2,
+    #fullpage .section div.item div.intro h1 a,
+    #fullpage .section div.item div.intro h2 a {
       font-weight: 300; }
     #fullpage .section div.item div.intro h1 {
       font-size: 3rem;
@@ -293,7 +296,8 @@
       overflow: hidden;
       text-align: center;
       font-style: italic; }
-    #fullpage .section div.item div.promos div.promo p, #fullpage .section div.item div.promos div.promo a {
+    #fullpage .section div.item div.promos div.promo p,
+    #fullpage .section div.item div.promos div.promo a {
       color: white; }
     #fullpage .section div.item div.promos div.promo .arrow {
       position: absolute;
@@ -326,7 +330,8 @@
 #fullpage .cycle-prev {
   text-align: right; }
 
-#fullpage .cycle-prev i, #fullpage .cycle-next i {
+#fullpage .cycle-prev i,
+#fullpage .cycle-next i {
   margin-top: 300px;
   text-shadow: 1px 2px 5px #000;
   cursor: pointer; }
@@ -354,7 +359,8 @@ ul#homepage_navigation {
       ul#homepage_navigation li a:hover {
         text-decoration: none; }
 
-ul#homepage_navigation li.active, ul#homepage_navigation li.active a {
+ul#homepage_navigation li.active,
+ul#homepage_navigation li.active a {
   color: #5DDBBF;
   font-weight: bold; }
 
@@ -396,3 +402,6 @@ ul#homepage_navigation li.active, ul#homepage_navigation li.active a {
 @media (min-width: 1900px) {
   .owl-carousel .owl-dots {
     top: 25%; } }
+
+.navbar {
+  border-bottom: 1px solid #223a75; }
